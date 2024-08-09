@@ -22,9 +22,9 @@ We provide the code in the form of standalone notebooks to facilitate the reprod
 - The resNet152 model is available [here](https://huggingface.co/microsoft/resnet-152). 
 
 ## Data and preprocessing
-The raw data used for our experiments are public and freely available at the following links:
-- Sandstone dataset: https://www.digitalrocksportal.org/projects/317
-- Carbonates : [https://www.digitalrocksportal.org/projects/151](https://www.digitalrocksportal.org/projects/151 "https://www.digitalrocksportal.org/projects/151")
+The raw data used for our experiments are public and freely available:
+- Sandstones: [https://www.digitalrocksportal.org/projects/317](https://www.digitalrocksportal.org/projects/317).
+- Carbonates: [https://www.digitalrocksportal.org/projects/151](https://www.digitalrocksportal.org/projects/151).
 
 Some notebooks expect data in the form of a NumPy (npy) archive, while others require TIFF (tif) files. In any case, **before running anything**, download the data and store it in a Google Drive folder. Following this you can run the `data_preprocessing.ipy` notebook to transform the raw data into the required formats. 
 
