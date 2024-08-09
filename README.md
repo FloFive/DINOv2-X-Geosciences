@@ -2,7 +2,7 @@
 This is the official code repository for our study:
 
 #### *DINOv2 Rocks Geological Image Analysis: Classification, Segmentation, and Interpretability*
-- **Authors:** Florent Brondolo and Samuel Beaussant
+- **Authors:** [Florent Brondolo](https://www.linkedin.com/in/flo-brondolo) and [Samuel Beaussant](https://www.linkedin.com/in/samuel-beaussant-a25905197/)
 - **Paper:** https://arxiv.org/abs/2407.18100
 
 ***
