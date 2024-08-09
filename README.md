@@ -33,11 +33,11 @@ You can either train the models from scratch or run inference using our checkpoi
 
 ## Found a bug?
 If you spot a bug or have a problem running the code, please open an issue.
-Please direct other correspondence to Florent Brondolo: [florent.brondolo@akkodis.com](mailto:florent.brondolo@akkodis.com)
-or Samuel Beaussant: [samuel.beaussant@akkodis.com](mailto:samuel.beaussant@akkodis.com)
+If you have any questions or need further assistance, don't hesitate to contact Florent Brondolo ([florent.brondolo@akkodis.com](mailto:florent.brondolo@akkodis.com))
+or Samuel Beaussant ([samuel.beaussant@akkodis.com](mailto:samuel.beaussant@akkodis.com))
 
-# Bibtex
-If you use our code or find our work useful, please consider citing us as
+# Citation / Bibtex
+If you use our code or find our work helpful, please consider citing it as follows:
 > @article{brondolo2024dinov2,
   title={DINOv2 Rocks Geological Image Analysis: Classification, Segmentation, and Interpretability},
   author={Brondolo, Florent and Beaussant, Samuel},
