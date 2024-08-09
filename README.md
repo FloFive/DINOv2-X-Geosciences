@@ -9,6 +9,8 @@ This is the official code repository for our study:
 ***
 This study investigates the interpretability, classification, and segmentation of CT-scan images of rock samples, with a particular focus on the application of DINOv2 within Geosciences. We compared various segmentation techniques to evaluate their efficacy, efficiency, and adaptability in geological image analysis. The methods assessed include the Otsu thresholding method, clustering techniques (K-means and fuzzy C-means), a supervised machine learning approach (Random Forest), and deep learning methods (UNet and DINOv2). We tested these methods using ten binary sandstone datasets and three multi-class calcite datasets. 
 
+<img src="/image_.png" alt="DINOv2" title="DINOv2" width="300"/>
+
 # Code
 We provide the code in the form of standalone notebooks to facilitate the reproducibility of our results and make them accessible even to GPU-poor people ! All the notebooks names are self-explanatory and reproduce a subset of the results of the paper. 
 
