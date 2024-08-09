@@ -1,4 +1,4 @@
-![DINOv2!](/image.png "DINOv2")
+![DINOv2!](/image_.png "DINOv2")
 # DINOv2 x Geosciences
 This is the official code repository for our study:
 
