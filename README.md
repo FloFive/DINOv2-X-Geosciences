@@ -29,7 +29,7 @@ The raw data used for our experiments are public and freely available:
 Some notebooks expect data in the form of a NumPy (npy) archive, while others require TIFF (tif) files. In any case, **before running anything**, download the data and store it in a Google Drive folder. Following this you can run the `data_preprocessing.ipy` notebook to transform the raw data into the required formats. 
 
 ## Model weights
-You can either train the models from scratch or run inference using our checkpoints. They can be downloaded at the following link: **link to the model weights**.  
+You can either train the models from scratch or run inference using our checkpoints. They can be downloaded at the following [link](https://drive.google.com/file/d/1C2UCfMWGNQi2Gv_1wAGp22-SODL1SXQZ/view?usp=sharing).  
 
 ## Found a bug?
 If you spot a bug or have a problem running the code, please open an issue.
