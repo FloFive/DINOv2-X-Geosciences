@@ -29,7 +29,7 @@ The raw data used for our experiments are public and freely available:
 Some notebooks expect data in the form of a NumPy (npy) archive, while others require TIFF (tif) files. In any case, **before running anything**, download the data and store it in a Google Drive folder. Following this you can run the `data_preprocessing.ipy` notebook to transform the raw data into the required formats. 
 
 ## Model weights
-You can either train the models from scratch or run inference using our checkpoints. They can be downloaded at the following [link](https://drive.google.com/file/d/1C2UCfMWGNQi2Gv_1wAGp22-SODL1SXQZ/view?usp=sharing).  
+You have the option to either train the models from scratch or perform inference using our pre-trained checkpoints, which can be downloaded from this [link](https://drive.google.com/file/d/1C2UCfMWGNQi2Gv_1wAGp22-SODL1SXQZ/view?usp=sharing). These weights are the product of training with the DINOv2-base backbone (768 features), fine-tuned using LoRA and a simple linear head. The model definition code is available [here](https://github.com/FloFive/DINOv2-X-Geosciences/blob/main/code/DINOv2.ipynb), and the weights were originally used for [PCA evaluation](https://github.com/FloFive/DINOv2-X-Geosciences/blob/main/code/PCA.ipynb).
 
 ## Found a bug?
 If you spot a bug or have a problem running the code, please open an issue.
