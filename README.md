@@ -28,6 +28,15 @@ The raw data used for our experiments are public and freely available:
 
 Some notebooks expect data in the form of a NumPy (npy) archive, while others require TIFF (tif) files. In any case, **before running anything**, download the data and store it in a Google Drive folder. Following this you can run the `data_preprocessing.ipy` notebook to transform the raw data into the required formats. 
 
+## Some results
+Here, we present a portion of our experimental results, highlighting the performance of seven models: ResNet152, four variations of DINOv2, and two iterations of a UNet. The four versions of DINOv2 include a frozen DINOv2 paired with either a linear or a complex convolutional head, and a LoRA fine-tuned DINOv2 also paired with the same heads. For the UNet models, we utilized the same backbone with two different feature sizes: small (n=32) and large (n=64).
+
+The results clearly demonstrate the superior capability of DINOv2 in interpreting raw rock CT scans. Experimental parameters were consistent across all experiments: 1000 images for training (split between two rock datasets) and 500 images for validation (from a third rock sample). Hyperparameters were set identically across all training sessions.
+
+<p align="center">
+  <img src="/iou_models.png" alt="DINOv2" title="IoU for various DL models" width="300"/>
+</p>
+
 ## Model weights
 You have the option to either train the models from scratch or perform inference using our pre-trained checkpoints, which can be downloaded from this [link](https://drive.google.com/file/d/1C2UCfMWGNQi2Gv_1wAGp22-SODL1SXQZ/view?usp=sharing). These weights are the product of training with the DINOv2-base backbone (768 features), fine-tuned using LoRA and a simple linear head. The model definition code is available [here](https://github.com/FloFive/DINOv2-X-Geosciences/blob/main/code/DINOv2.ipynb), and the weights were originally used for [PCA evaluation](https://github.com/FloFive/DINOv2-X-Geosciences/blob/main/code/PCA.ipynb).
 
