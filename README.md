@@ -1,4 +1,4 @@
-# 🦖 DINOv2 x Geosciences :x_ray:
+# 🦖 DINOv2 x Geosciences 🌍
 This is the official code repository for our study:
 
 #### *DINOv2 Rocks Geological Image Analysis: Classification, Segmentation, and Interpretability*
