@@ -34,7 +34,7 @@ Here, we present a portion of our experimental results, highlighting the perform
 The results clearly demonstrate the superior capability of DINOv2 in interpreting raw rock CT scans. Experimental parameters were consistent across all experiments: 1000 images for training (split between two rock datasets) and 500 images for validation (from a third rock sample). Hyperparameters were set identically across all training sessions.
 
 <p align="center">
-  <img src="/iou_models.png" alt="DINOv2" title="IoU for various DL models" width="300"/>
+  <img src="/iou_models.pdf" alt="DINOv2" title="IoU for various DL models" width="300"/>
 </p>
 
 ## Model weights
