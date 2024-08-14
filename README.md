@@ -26,7 +26,7 @@ The raw data used for our experiments are public and freely available:
 - Sandstones: [https://www.digitalrocksportal.org/projects/317](https://www.digitalrocksportal.org/projects/317).
 - Carbonates: [https://www.digitalrocksportal.org/projects/151](https://www.digitalrocksportal.org/projects/151).
 
-Some notebooks expect data in the form of a NumPy (npy) archive, while others require TIFF (tif) files. In any case, **before running anything**, download the data and store it in a Google Drive folder. Following this you can run the `data_preprocessing.ipy` notebook to transform the raw data into the required formats. 
+Some notebooks expect data as a NumPy (npy) archive, while others require TIFF (tif) files. In any case, **before running anything**, download the data and store it in a Google Drive folder. Following this you can run the `data_preprocessing.ipy` notebook to transform the raw data into the required formats. 
 
 ## Some results
 Here, we present a portion of our experimental results, highlighting the performance of seven models: ResNet152, four variations of DINOv2, and two iterations of a UNet. The four versions of DINOv2 include a frozen DINOv2 paired with either a linear or a complex convolutional head, and a LoRA fine-tuned DINOv2 also paired with the same heads. For the UNet models, we utilized the same backbone with two different feature sizes: small (n=32) and large (n=64).
@@ -38,7 +38,7 @@ The results clearly demonstrate the superior capability of DINOv2 in interpretin
 </p>
 
 ## Model weights
-You have the option to either train the models from scratch or perform inference using our pre-trained checkpoints, which can be downloaded from this [link](https://drive.google.com/file/d/1C2UCfMWGNQi2Gv_1wAGp22-SODL1SXQZ/view?usp=sharing). These weights are the product of training with the DINOv2-base backbone (768 features), fine-tuned using LoRA and a simple linear head. The model definition code is available [here](https://github.com/FloFive/DINOv2-X-Geosciences/blob/main/code/DINOv2.ipynb), and the weights were originally used for [PCA evaluation](https://github.com/FloFive/DINOv2-X-Geosciences/blob/main/code/PCA.ipynb).
+You have the option to either train the models from scratch or perform inference using our pre-trained checkpoints, which can be downloaded from this [link](https://drive.google.com/drive/folders/1GeghKqx1r339EpiQod4EUrE5Y6W5FwY8?usp=sharing). These weights are the product of training with the DINOv2-base backbone (768 features), fine-tuned using LoRA plus a convolutional head. The numbers in the folder name indicate how many images have been used for the training set. The model definition code is available [here](https://github.com/FloFive/DINOv2-X-Geosciences/blob/main/code/DINOv2.ipynb). Additionally, we provide weights for the DINOv2-base model fine-tuned with LoRA and coupled to a linear head. These weights have been used for [PCA evaluation](https://github.com/FloFive/DINOv2-X-Geosciences/blob/main/code/PCA.ipynb).
 
 ## Found a bug?
 If you spot a bug or have a problem running the code, please open an issue.
