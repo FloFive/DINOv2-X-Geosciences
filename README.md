@@ -3,7 +3,9 @@ This is the official code repository for our study:
 
 #### *DINOv2 Rocks Geological Image Analysis: Classification, Segmentation, and Interpretability*
 - **Authors:** [Florent Brondolo](https://www.linkedin.com/in/flo-brondolo) and [Samuel Beaussant](https://www.linkedin.com/in/samuel-beaussant-a25905197/)
-- **Paper:** https://arxiv.org/abs/2407.18100
+- **Paper:** [![Static Badge](https://img.shields.io/badge/arXiv-Pre%20print-red)](https://arxiv.org/abs/2407.18100) - [![Static Badge](https://img.shields.io/badge/JRMGE-Pre%20proof-blue)](https://doi.org/10.1016/j.jrmge.2025.01.057)
+
+
 
 ***
 This study investigates the interpretability, classification, and segmentation of CT-scan images of rock samples, with a particular focus on the application of DINOv2 within Geosciences. We compared various segmentation techniques to evaluate their efficacy, efficiency, and adaptability in geological image analysis. The methods assessed include the Otsu thresholding method, clustering techniques (K-means and fuzzy C-means), a supervised machine learning approach (Random Forest), and deep learning methods (UNet and DINOv2). We tested these methods using ten binary sandstone datasets and three multi-class calcite datasets. 
