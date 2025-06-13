@@ -1,10 +1,9 @@
 # 🦖 DINOv2 x Geosciences 🌍
-This is the official code repository for our study:
+This is the code repository for our study:
 
 #### *DINOv2 Rocks Geological Image Analysis: Classification, Segmentation, and Interpretability*
 - [Florent Brondolo](https://www.linkedin.com/in/flo-brondolo) and [Samuel Beaussant](https://www.linkedin.com/in/samuel-beaussant-a25905197/)
 - [![Static Badge](https://img.shields.io/badge/arXiv-Pre%20print-red)](https://arxiv.org/abs/2407.18100)   [![Static Badge](https://img.shields.io/badge/JRMGE-Pre%20proof-blue)](https://doi.org/10.1016/j.jrmge.2025.01.057)
-
 
 
 ***
@@ -15,7 +14,7 @@ This study investigates the interpretability, classification, and segmentation o
 </p>
 
 # 👾 Code
-We provide the code in the form of standalone notebooks to facilitate the reproducibility of our results and make them accessible to all (even to GPU-poor people!). The names of all the notebooks are self-explanatory and reproduce a subset of the paper's results.
+We provide the code in the form of standalone notebooks to facilitate the reproducibility of our results and make them accessible to all (even to GPU-poor people!).. The notebooks' names are self-explanatory, and each reproduces a subset of the paper's results.
 
 - The multi-Otsu algorithm has been adapted from [the scikit-image library](https://scikit-image.org/docs/stable/auto_examples/segmentation/plot_multiotsu.html).
 - The K-means algorithm has been adapted from [the OpenCV library](https://docs.opencv.org/3.4/d1/d5c/tutorial_py_kmeans_opencv.html).
@@ -28,10 +27,10 @@ The raw data used for our experiments are public and freely available:
 - Sandstones: [https://www.digitalrocksportal.org/projects/317](https://www.digitalrocksportal.org/projects/317).
 - Carbonates: [https://www.digitalrocksportal.org/projects/151](https://www.digitalrocksportal.org/projects/151).
 
-Some notebooks expect data as a NumPy (npy) archive, while others require TIFF (tif) files. In any case, **before running anything**, download the data and store it in a Google Drive folder. Following this you can run the `data_preprocessing.ipy` notebook to transform the raw data into the required formats. 
+Some notebooks expect data as a NumPy (npy) archive, while others require TIFF (tif) files. In any case, **before running anything**, download the data and store it in a Google Drive folder. Following this, you can run the `data_preprocessing.ipy` notebook to transform the raw data into the required formats. 
 
 ## Some results
-Here, we present a portion of our experimental results, highlighting the performance of seven models: ResNet152, four variations of DINOv2, and two iterations of a UNet. The four versions of DINOv2 include a frozen DINOv2 paired with either a linear or a complex convolutional head, and a LoRA fine-tuned DINOv2 also paired with the same heads. For the UNet models, we utilized the same backbone with two different feature sizes: small (n=32) and large (n=64).
+Here, we present a portion of our experimental results, highlighting the performance of seven models: ResNet152, four variations of DINOv2, and two iterations of a UNet. The four versions of DINOv2 include a frozen DINOv2 paired with either a linear or a complex convolutional head, and a LoRA fine-tuned DINOv2 also paired with the same heads. For the UNet models, we utilised the same backbone with two different feature sizes: small (n=32) and large (n=64).
 
 The results clearly demonstrate the superior capability of DINOv2 in interpreting raw rock CT scans. Experimental parameters were consistent across all experiments: 1000 images for training (split between two rock datasets) and 500 images for validation (from a third rock sample). Hyperparameters were set identically across all training sessions.
 
