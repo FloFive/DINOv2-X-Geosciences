@@ -50,10 +50,14 @@ or Samuel Beaussant ([samuel.beaussant@akkodis.com](mailto:samuel.beaussant@akko
 # 📚 Citation / Bibtex
 If you use our code or find our work helpful, please consider citing it as follows:
 ```
-@article{brondolo2024dinov2,
-  title={DINOv2 Rocks Geological Image Analysis: Classification, Segmentation, and Interpretability},
-  author={Brondolo, Florent and Beaussant, Samuel},
-  journal={arXiv preprint arXiv:2407.18100},
-  year={2024}
+@article{brondolo2025dinov2,
+  title = {DINOv2 rocks geological image analysis: Classification, segmentation, and interpretability},
+  journal = {Journal of Rock Mechanics and Geotechnical Engineering},
+  year = {2025},
+  issn = {1674-7755},
+  doi = {https://doi.org/10.1016/j.jrmge.2025.01.057},
+  url = {https://www.sciencedirect.com/science/article/pii/S1674775525002677},
+  author = {Florent Brondolo and Samuel Beaussant},
+  keywords = {Computer vision, Micro-computed tomography (μCT), DINOv2, Vision transformers (ViTs), Segmentation, Classification}
 }
 ```
