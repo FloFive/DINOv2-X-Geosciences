@@ -41,7 +41,7 @@ The results clearly demonstrate the superior capability of DINOv2 in interpretin
 ## Model weights
 You have the option to either train the models from scratch or perform inference using our pre-trained checkpoints, which can be downloaded from this [link](https://drive.google.com/drive/folders/1GeghKqx1r339EpiQod4EUrE5Y6W5FwY8?usp=sharing). These weights are the product of training with the DINOv2-base backbone (768 features), fine-tuned using LoRA plus a convolutional head. The numbers in the folder name indicate how many images have been used for the training set. The model definition code is available [here](https://github.com/FloFive/DINOv2-X-Geosciences/blob/main/code/DINOv2.ipynb). Additionally, we provide weights for the DINOv2-base model fine-tuned with LoRA and coupled to a linear head. These weights have been used for [PCA evaluation](https://github.com/FloFive/DINOv2-X-Geosciences/blob/main/code/PCA.ipynb).
 
-## Found a bug :disappointed:
+## Found a bug ? :disappointed:
 If you spot a bug or have a problem running the code, please open an issue.
 If you have any questions or need further assistance, don't hesitate to contact Florent Brondolo ([florent.brondolo@akkodis.com](mailto:florent.brondolo@akkodis.com))
 or Samuel Beaussant ([samuel.beaussant@akkodis.com](mailto:samuel.beaussant@akkodis.com)).
