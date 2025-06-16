@@ -14,7 +14,7 @@ This study investigates the interpretability, classification, and segmentation o
 </p>
 
 # 👾 Code
-We provide the code in the form of standalone notebooks to facilitate the reproducibility of our results and make them accessible to all (even to GPU-poor people!).. The notebooks' names are self-explanatory, and each reproduces a subset of the paper's results.
+We provide the code in the form of standalone notebooks to facilitate the reproducibility of our results and make them accessible to all (even to GPU-poor people!). The notebooks' names are self-explanatory, and each reproduces a subset of the paper's results.
 
 - The multi-Otsu algorithm has been adapted from [the scikit-image library](https://scikit-image.org/docs/stable/auto_examples/segmentation/plot_multiotsu.html).
 - The K-means algorithm has been adapted from [the OpenCV library](https://docs.opencv.org/3.4/d1/d5c/tutorial_py_kmeans_opencv.html).
@@ -32,7 +32,7 @@ Some notebooks expect data as a NumPy (npy) archive, while others require TIFF (
 ## Some results
 Here, we present a portion of our experimental results, highlighting the performance of seven models: ResNet152, four variations of DINOv2, and two iterations of a UNet. The four versions of DINOv2 include a frozen DINOv2 paired with either a linear or a complex convolutional head, and a LoRA fine-tuned DINOv2 also paired with the same heads. For the UNet models, we utilised the same backbone with two different feature sizes: small (n=32) and large (n=64).
 
-The results clearly demonstrate the superior capability of DINOv2 in interpreting raw rock CT scans. Experimental parameters were consistent across all experiments: 1000 images for training (split between two rock datasets) and 500 images for validation (from a third rock sample). Hyperparameters were set identically across all training sessions.
+The results demonstrate the superior capability of DINOv2 in interpreting raw rock CT scans. Experimental parameters were consistent across all experiments: 1000 images for training (split between two rock datasets) and 500 images for validation (from a third rock sample). Hyperparameters were set identically across all training sessions.
 
 <p align="center">
   <img src="/iou_models.png" alt="results" title="IoU for various DL models" width="500"/>
@@ -41,7 +41,7 @@ The results clearly demonstrate the superior capability of DINOv2 in interpretin
 ## Model weights
 You have the option to either train the models from scratch or perform inference using our pre-trained checkpoints, which can be downloaded from this [link](https://drive.google.com/drive/folders/1GeghKqx1r339EpiQod4EUrE5Y6W5FwY8?usp=sharing). These weights are the product of training with the DINOv2-base backbone (768 features), fine-tuned using LoRA plus a convolutional head. The numbers in the folder name indicate how many images have been used for the training set. The model definition code is available [here](https://github.com/FloFive/DINOv2-X-Geosciences/blob/main/code/DINOv2.ipynb). Additionally, we provide weights for the DINOv2-base model fine-tuned with LoRA and coupled to a linear head. These weights have been used for [PCA evaluation](https://github.com/FloFive/DINOv2-X-Geosciences/blob/main/code/PCA.ipynb).
 
-## Found a bug ? :disappointed:
+## Found a bug? :disappointed:
 If you spot a bug or have a problem running the code, please open an issue.
 If you have any questions or need further assistance, don't hesitate to contact Florent Brondolo ([florent.brondolo@akkodis.com](mailto:florent.brondolo@akkodis.com))
 or Samuel Beaussant ([samuel.beaussant@akkodis.com](mailto:samuel.beaussant@akkodis.com)).
